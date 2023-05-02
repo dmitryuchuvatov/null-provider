@@ -1,8 +1,11 @@
 # Sample repo for Null Provider
-See https://registry.terraform.io/providers/hashicorp/null/latest/docs for the reference
+
+See [this page](https://registry.terraform.io/providers/hashicorp/null/latest/docs) for the reference
+
 
 # Prerequisite
-Install and configure Terraform as per https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+
+Install and configure Terraform as per [official documentation](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
 # How To
 
@@ -23,7 +26,8 @@ cd null-provider
 ```
 terraform init
 ```
-Ensure to have the following output:
+
+You should see the following output:
 
 ```
 Initializing the backend...
@@ -47,33 +51,6 @@ should now work.
 If you ever set or change modules or backend configuration for Terraform,
 rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
-```
-
-## Test Plan 
-
-```
-terraform plan
-```
-You should see the similar output:
-
-```
-Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following
-symbols:
-  + create
-
-Terraform will perform the following actions:
-
-  # null_resource.null will be created
-  + resource "null_resource" "null" {
-      + id = (known after apply)
-    }
-
-Plan: 1 to add, 0 to change, 0 to destroy.
-
-────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-
-Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run
-"terraform apply" now.
 ```
 
 ## Run Terraform Apply
