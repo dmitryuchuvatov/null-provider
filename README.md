@@ -81,13 +81,11 @@ Do you want to perform these actions?
   Enter a value: yes
 
 null_resource.null: Creating...
-null_resource.null: Provisioning with 'local-exec'...
-null_resource.null (local-exec): Executing: ["/bin/sh" "-c" "echo 'Hello World'"]
-null_resource.null (local-exec): Hello World
-null_resource.null: Creation complete after 0s [id=8174626668123780454]
+null_resource.null: Creation complete after 0s [id=7473715755243818068]
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
+
 ## Clean Up
 
 ```
@@ -96,7 +94,7 @@ terraform destroy
 Enter **yes** and hit **Enter** to destroy the resources:
 
 ```
-null_resource.null: Refreshing state... [id=8174626668123780454]
+null_resource.null: Refreshing state... [id=7473715755243818068]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following
 symbols:
@@ -106,7 +104,7 @@ Terraform will perform the following actions:
 
   # null_resource.null will be destroyed
   - resource "null_resource" "null" {
-      - id = "8174626668123780454" -> null
+      - id = "7473715755243818068" -> null
     }
 
 Plan: 0 to add, 0 to change, 1 to destroy.
@@ -117,10 +115,8 @@ Do you really want to destroy all resources?
 
   Enter a value: yes
 
-null_resource.null: Destroying... [id=8174626668123780454]
+null_resource.null: Destroying... [id=7473715755243818068]
 null_resource.null: Destruction complete after 0s
 
 Destroy complete! Resources: 1 destroyed.
 ```
-
-
